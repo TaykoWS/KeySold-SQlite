@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    @include('ClientPart.Partials.index.head')
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  @include('ClientPart.Partials.index.nav')
+
+  <!-- Page Content -->
+  <div class="container">
+    @include('flash::message')
+
+    <!-- Jumbotron Header -->
+    <header class="jumbotron my-4">
+      <h1 class="display-3">Bienvenue sur KeySold !</h1>
+      <p class="lead">Achète tes clés CD à bas prix et joue à tes jeux favoris !!</p>
+    </header>
+
+    <!-- Page Features -->
+    <div class="row text-center">
+      @foreach($products as $product)
+
+      <div class="col-lg-3 col-md-6 mb-4">
+        <div class="h-100">
+          <img class="img-top" src="{{ asset('storage/product/'.$product->photo) }}" alt="postImage">
+          <div class="body">
+            <h4 class="title">{{$product->nom}}</h4>
+            <p class="text">{{$product->description}}</p>
+          </div>
+          <div class="footer">
+            <a href="/product/{{$product->id}}" class="btn btn-primary">En savoir plus...</a>
+          </div>
+        </div>
+      </div>
+
+      @endforeach
+    </div>
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  @include('ClientPart.Partials.index.footer')
+
+  <!-- Bootstrap core JavaScript -->
+  @include('ClientPart.Partials.index.footer-script')
+
+</body>
+
+</html>
