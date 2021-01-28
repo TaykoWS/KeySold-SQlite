@@ -1,5 +1,15 @@
 Examen TP Laravel :
 
+-------------------------------------------------------------
+
+(Membre du groupe) :
+----
+DANG Ngoc Ha Lan
+SAINT-HONORÉ Anthony
+---
+
+-------------------------------------------------------------
+
 1. Installer composer avec la commande : "composer install"
 2. Mettez le à jour avec la commande : "composer update"
 3. Renommer le ".env.example" en ".env" (si vous n'avez pas déjà le ".env")
@@ -9,6 +19,8 @@ Examen TP Laravel :
 
 7. Dans l'index, pour vous authentifier cliquez sur "login", si vous souhaitez créer un compte pour tester cliquez sur "Register"
 8. Dans l'interface admin il suffit de cliquer sur "membre" pour voir tout les comptes utilisateurs conçu et pour le modifier ou supprimer
+
+-------------------------------------------------------------
 
 Pour se connecter en admin et ainsi accéder au CRUD :
 
